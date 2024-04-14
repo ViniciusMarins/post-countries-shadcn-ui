@@ -9,23 +9,12 @@ import {
 import img1 from "../assets/foto-1.jpg";
 import img2 from "../assets/foto-2.jpg";
 import img3 from "../assets/foto-3.jpg";
-import { useState } from "react";
+import img4 from "../assets/foto-4.jpg";
+import img5 from "../assets/foto-5.jpg";
 
-const images = [img2, img1, img3];
+const images = [img2, img1, img3, img4, img5];
 
 function Article() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handlePrevious = () => {
-    const newIndex = (currentIndex - 1 + images.length) % images.length;
-    setCurrentIndex(newIndex);
-  };
-
-  const handleNext = () => {
-    const newIndex = (currentIndex + 1) % images.length;
-    setCurrentIndex(newIndex);
-  };
-
   return (
     <div className="prose prose-p:text-justify dark:text-zinc-100 dark:prose-headings:text-zinc-100 dark:prose-blockquote:text-zinc-100 mt-16 md:max-w-[70%] w-full mx-auto">
       <h1>Conhecendo as Regiões do Mundo: Uma Jornada de Descoberta</h1>
