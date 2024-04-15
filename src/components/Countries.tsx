@@ -49,7 +49,7 @@ function Countries({
     }
   };
 
-  const handlePreviosPage = () => {
+  const handlePreviousPage = () => {
     if (currentPage !== 1) {
       setCurrentPage((prev) => {
         handlePagination(prev - 1);
@@ -74,7 +74,7 @@ function Countries({
       <Pagination className="mt-5">
         <PaginationContent className="cursor-pointer">
           <PaginationItem>
-            <PaginationPrevious onClick={handlePreviosPage} />
+            <PaginationPrevious onClick={handlePreviousPage} />
           </PaginationItem>
 
           {Array.from({ length: numPages }, (_, index) => (
